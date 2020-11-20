@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Movie Catalogue</string>
+
+    <string name="movie_s_poster">movie\'s poster</string>
+    <string name="movie_name">Movie Name</string>
+    <string name="facts">Facts</string>
+    <string name="status">Status</string>
+    <string name="language">Language</string>
+    <string name="runtime">Runtime</string>
+    <string name="overview">Overview</string>
+    <string name="tab_text_movies">MOVIES</string>
+    <string name="tab_text_tv_shows">TV SHOWS</string>
+    <string name="menu_favorite">favorite</string>
+    <string name="menu_search">search</string>
+    <string name="top_billed_cast">Top Billed Cast</string>
+    <string name="cast_photo">Cast Photo</string>
+    <string name="artist_name">Artist Name</string>
+    <string name="cast">Cast</string>
+</resources>

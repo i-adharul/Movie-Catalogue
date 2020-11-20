@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.detail.DetailFragment"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            tools:context=".view.detail.MainActivity">
+
+            <ImageView
+                android:id="@+id/ivPoster"
+                android:layout_width="153dp"
+                android:layout_height="233dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="285dp"
+                android:layout_marginBottom="544dp"
+                android:contentDescription="@string/movie_s_poster"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tvFilmName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:maxLines="2"
+                android:text="@string/movie_name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/ivPoster"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/ivPoster"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tvFactsStatic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/facts"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/tvFilmName"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvFilmName"
+                app:layout_constraintTop_toBottomOf="@+id/tvFilmName" />
+
+            <TextView
+                android:id="@+id/tvStatusStatic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/status"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/tvFactsStatic"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvFactsStatic"
+                app:layout_constraintTop_toBottomOf="@+id/tvFactsStatic" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvStatusStatic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvFactsStatic"
+                app:layout_constraintTop_toTopOf="@+id/tvStatusStatic" />
+
+            <TextView
+                android:id="@+id/tvLanguageStatic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/language"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/tvStatusStatic"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvStatusStatic"
+                app:layout_constraintTop_toBottomOf="@+id/tvStatusStatic" />
+
+            <TextView
+                android:id="@+id/tvLanguage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvLanguageStatic"
+                app:layout_constraintEnd_toEndOf="@+id/tvStatus"
+                app:layout_constraintStart_toStartOf="@+id/tvStatus"
+                app:layout_constraintTop_toTopOf="@+id/tvLanguageStatic" />
+
+            <TextView
+                android:id="@+id/tvRuntimeStatic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/runtime"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/tvLanguageStatic"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvLanguageStatic"
+                app:layout_constraintTop_toBottomOf="@+id/tvLanguageStatic" />
+
+            <TextView
+                android:id="@+id/tvRuntime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvRuntimeStatic"
+                app:layout_constraintEnd_toEndOf="@+id/tvLanguage"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvLanguage"
+                app:layout_constraintTop_toTopOf="@+id/tvRuntimeStatic" />
+
+            <TextView
+                android:id="@+id/tvOverviewStatic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/overview"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/ivPoster"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/ivPoster"
+                app:layout_constraintTop_toBottomOf="@+id/ivPoster" />
+
+            <TextView
+                android:id="@+id/tvOverview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvOverviewStatic"
+                app:layout_constraintTop_toBottomOf="@+id/tvOverviewStatic" />
+
+            <TextView
+                android:id="@+id/tvCastStatic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="@string/top_billed_cast"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/tvOverviewStatic"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvOverviewStatic"
+                app:layout_constraintTop_toBottomOf="@+id/tvOverview" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCast"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvCastStatic"
+                app:layout_constraintTop_toBottomOf="@+id/tvCastStatic" />
+
+            <ProgressBar
+                android:id="@+id/progressBarMovieGrid"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.37" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</LinearLayout>
