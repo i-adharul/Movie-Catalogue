@@ -1,7 +1,7 @@
 # Movie-Catalogue
 ## About This App
 This app was created when I took the Android Jetpack Pro course to implement ViewModel, Splash Screen, Repository Pattern, LiveData, Idling Resources, Unit Testing, and Instrumentation Testing.
-This app displays a list of Film (Movie and TvShow) along with their details. The data to be displayed is [MovieDbAPI](https://developers.themoviedb.org/3/getting-started/introduction) data.
+This app displays a list of Film (Movie and TvShow) along with their details. The data displayed is obtained via the [MovieDb API](https://developers.themoviedb.org/3/getting-started/introduction) data.
 
 App features:
 -	Movie List
